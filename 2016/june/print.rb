@@ -1,1 +1,1 @@
-print "kakak"
+print "kakarot\n"
