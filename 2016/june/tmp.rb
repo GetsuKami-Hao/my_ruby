@@ -1,1 +1,1 @@
-p 123
+print "operator"
