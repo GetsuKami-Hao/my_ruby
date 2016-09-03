@@ -13,3 +13,11 @@ p newstr
 
 #“chop” and “chomp” ,don't destory the original string.
 #“!chop” and “chomp!”, will destory the original string.
+
+#usually usage
+
+# while line = gets
+# 	line.chomp!
+# 	others operations
+# end
+
