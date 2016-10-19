@@ -9,5 +9,18 @@ b2 = Book.new("How Objects Work","平泽章");
 booklist.add(b1)
 booklist.add(b2)
 
-printf booklist[0].title , "\n"
-printf booklist[1].title , "\n"
+booklist.each{|book|
+#	print book.title, "\n"
+}
+
+booklist.each_title{|title|
+#	print title,"\n"
+}
+
+booklist.each_title_author{|title,author|
+#	puts "标题：#{title}, 作者：#{author}"
+}
+
+booklist.find_by_author(/平泽章/).each{|book|
+	puts "title: #{book.title}"
+}

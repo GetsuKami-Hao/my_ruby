@@ -1,4 +1,4 @@
-require '/home/yirolhao/ruby/my_ruby/2016/october/book'
+require './book'
 
 class BookList
 	
@@ -26,6 +26,42 @@ class BookList
 
 	def delete(book)
 		@booklist.delete(book)
+	end
+
+	def each
+		@booklist.each{|book|
+			yield(book)
+		}
+	end
+
+	def each_title
+		@booklist.each{|book|
+			yield(book.title)
+		}
+	end
+
+	def each_title_author
+		@booklist.each{|book|
+			yield(book.title,book.author)
+		}
+	end
+
+	def find_by_author(author)
+		if block_given? 
+			@booklist.each{|book|
+				if author =~ book.author
+						yield(book)
+				end
+		}
+		else
+			result = []
+			@booklist.each{|book|
+				if author =~book.author
+								result << book
+				end
+			}
+			return result
+		end
 	end
 end
 
