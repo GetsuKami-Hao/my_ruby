@@ -1,4 +1,0 @@
-Output to $stdout.
-123
-asd
-...
