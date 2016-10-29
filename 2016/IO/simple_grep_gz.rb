@@ -13,3 +13,11 @@ while text = file.gets do
 		print text					
 	end
 end
+
+
+unless file.closed?
+	print "整个文件一共有：#{file.lineno}行。\n" 
+	file.close
+end
+
+#ruby simple_grep_gz.rb "love" "log.txt.gz"
