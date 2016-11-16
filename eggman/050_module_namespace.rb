@@ -21,3 +21,5 @@ include Management::Track
 puts track
 
 puts Management::User.new.say_hello
+
+p Management.ancestors
