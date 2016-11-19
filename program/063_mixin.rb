@@ -11,13 +11,16 @@ module ActsAsField
 
 	module ClassMethods
 		def field name,path
+
 			result = class_variable_get(:@@acts_as_fields)
 			result << name.to_sym
 			class_variable_set(:@@acts_as_fields,result)
 
 			define_method(name) do
+	
 				case  path
 				when String
+					# puts path
 					path.split(".").inject(self.latest_data) { |data,key| data[key] }					
 
 				when Proc
@@ -29,7 +32,9 @@ module ActsAsField
 
 	module InstanceMethods
 		def acts_as_fields
+			p self.class
 			self.class.class_variable_get :@@acts_as_fields
+			
 		end
 	end
 end
@@ -49,7 +54,7 @@ class Device
 				"node_info" => "this is a sensor",
 				"battery" => 90
 			},
-			"device_type" => "Sensor"
+			"device_type" => "Sensodr"
 		}
 	end
 
@@ -57,7 +62,7 @@ end
 
 
 d= Device.new
-p d.node_info
-p d.device_type
+# p d.node_info
+# p d.device_type
 p d.battery_to_text
 p d.acts_as_fields
