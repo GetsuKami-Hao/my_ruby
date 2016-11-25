@@ -15,3 +15,4 @@ user1 = User.new "kakarot" , 23
 user2 = user1.dup
 
 puts user2
+
