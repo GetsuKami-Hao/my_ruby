@@ -38,3 +38,4 @@ class Mul
 end
 
 p Add.new(Mul.new(Number.new(1),Number.new(2)), Mul.new(Number.new(3), Number.new(4)))
+
