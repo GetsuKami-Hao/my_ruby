@@ -36,4 +36,5 @@ class TestBug < Test::Unit::TestCase
 		assert_equal('0/14',printer_error('aaabbbbhaijjjm'))
 		assert_equal('8/22',printer_error('aaaxbbbbyyhwawiwjjjwwm'))
 	end
+
 end
