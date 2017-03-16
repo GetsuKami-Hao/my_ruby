@@ -8,3 +8,11 @@ def get_count(inputStr)
 end
 
 puts get_count("aassseefffcc")
+
+
+class TestBug < Test::Unit::TestCase
+	def test_simple
+		assert_equal(2,get_count('abcdefg'))
+		assert_equal(3,get_count('aaajjjhw'))
+	end
+end
