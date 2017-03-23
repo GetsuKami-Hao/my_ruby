@@ -3,17 +3,17 @@ class User
   @@counter = 0
 
   def initialize name,age
-	  @name = name
-	  @age = age
-	  @@counter += 1
+    @name = name
+    @age = age
+    @@counter += 1
   end
 
   def say_hi
-	  puts "i am #{@name}, i am #{@age}"
+    puts "i am #{@name}, i am #{@age}"
   end
 
   def self.get_counter
-	  @@counter
+    @@counter
   end
 end
 
