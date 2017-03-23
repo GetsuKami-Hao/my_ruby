@@ -1,21 +1,21 @@
 class User
 
-	attr_reader :name, :age  # getter method.
-	def initialize name,age
-		@name = name
-		@age = age
-	end
+  attr_reader :name, :age  # getter method.
+  def initialize name,age
+	  @name = name
+	  @age = age
+  end
 
-	#setter
+  #setter.
+  def name= name
+	  @name = name
+  end
 
-	def name= name
-		@name = name
-	end
+  def age= age
+	  @age = age
+  end
 
-	def age= age
-		@age = age
-	end
-
+	# 尽量使用　attr_*
 end
 
 user1 = User.new("kakarot",15)

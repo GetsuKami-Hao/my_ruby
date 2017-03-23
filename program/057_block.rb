@@ -13,9 +13,8 @@ class EnuTest
   end
 
   def to_s
-  	@eb.to_s
+    @eb.to_s
   end
-
 end
 
 class EnuBlock
@@ -41,7 +40,7 @@ class EnuBlock
   end
 
   def to_s
-  p	@blocks
+    p	@blocks
   end
 
 end

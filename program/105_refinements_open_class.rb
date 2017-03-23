@@ -1,10 +1,10 @@
 
 module ArrayRefine
-	refine Array do 
-		def methods
-			'kakarot'
-		end
-	end
+  refine Array do 
+    def methods
+      'kakarot'
+    end
+  end
 end
 
 

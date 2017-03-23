@@ -1,12 +1,12 @@
 class MyClass
 
-	def inspect
-		"inspect"
-	end
+  def inspect
+    "inspect"
+  end
 
-	def to_s
-		'to_s'
-	end
+  def to_s
+    'to_s'
+  end
 end
 
 

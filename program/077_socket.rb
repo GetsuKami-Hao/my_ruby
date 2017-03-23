@@ -1,10 +1,9 @@
 require 'socket'
-=begin
-socket = Socket.new(Socket:: AF_INET, Socket:: SOCK_STREAM)
- INET 是internet的所写，特别用于指代IPV4
- STREAM 表示将使用数据流进行通信
- DGRAM 表示UDP套接字
-=end
+
+# socket = Socket.new(Socket:: AF_INET, Socket:: SOCK_STREAM)
+# INET 是internet的所写，特别用于指代IPV4
+# STREAM 表示将使用数据流进行通信
+# DGRAM 表示UDP套接字
 
 socket = Socket.new(:INET , :STREAM)
 addr = Socket.pack_sockaddr_in(4002, 'localhost')

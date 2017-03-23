@@ -1,14 +1,13 @@
 class A
-	p self  
+  p self  
 
-	class << self
-		p self
-	end
+  class << self
+    p self
+  end
 
-	def hello
-		p self
-	end
-
+  def hello
+    p self
+  end
 end
 
 A.new.hello

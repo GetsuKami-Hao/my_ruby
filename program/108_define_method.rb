@@ -1,20 +1,20 @@
 class Myclass
 
-	attr_reader :name,:age
+  attr_reader :name,:age
 
-	define_method :set_user do |name,age|
-		@name = name
-		@age = age
-	end
+  define_method :set_user do |name,age|
+    @name = name
+    @age = age
+  end
 
-	attributes = [:set_name, :set_age]
+  attributes = [:set_name, :set_age]
 
-	attributes.each do |method_name,attribute|
-		define_method method_name do |var|
-			@name = var if method_name == :set_name
-			@age = var if method_name == :set_age
-		end
-	end
+  attributes.each do |method_name,attribute|
+    define_method method_name do |var|
+      @name = var if method_name == :set_name
+      @age = var if method_name == :set_age
+    end
+  end
 end
 
 obj = Myclass.new

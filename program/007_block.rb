@@ -1,16 +1,14 @@
 def hi
   yield
-	yield
+  yield
 end
 
 def heo(name)
-	yield(name)
+  yield(name)
 end
 
-def 
-
-hi {p 'ok'}
-hello = proc{|x| p "hello #{x}"}
+hi { puts 'ok' }
+hello = proc { |x| puts "hello #{x}" }
 hello.call("kakarot")
 
-heo ("Getsu"){|tmp| puts"I love #{tmp}."}
+heo ('Getsu'){ |tmp| puts "I love #{tmp}." }

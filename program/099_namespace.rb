@@ -1,18 +1,18 @@
 module M
-	class C
-		X = 'a constant'
-		module M2
-			Module.nesting # => [M::C::M2, M::C, M]
-		end
-	end
+  class C
+    X = 'a constant'
+    module M2
+      Module.nesting # => [M::C::M2, M::C, M]
+    end
+  end
 end
 
 class A 
-	include M
+  include M
 end
 
 class B
-	prepend M
+  prepend M
 end
 
 p  A.ancestors

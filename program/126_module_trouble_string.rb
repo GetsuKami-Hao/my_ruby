@@ -1,17 +1,17 @@
 module MyModule
-	def my_method
+  def my_method
 		'mehotd define'
-	end
+  end
 end
 
 module MyModule2
-	def my_method2
-		'method'
-	end
+  def my_method2
+    'method'
+  end
 end
 
 class MyClass
-	extend MyModule
+  extend MyModule
 end
 
 p MyClass.my_method

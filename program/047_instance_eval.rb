@@ -1,17 +1,15 @@
-class User
-
-end
+User = Class.new
 
 User.class_eval do 		# define instance method.
-	def hello
-		'hello world!'
-	end
+  def hello
+    'hello world!'
+  end
 end
 
 User.instance_eval do		#define class method.
-	def hi
-		'hi world'
-	end
+  def hi
+    'hi world'
+  end
 end
 
 p User.class   # User class is 'Class'  a instance. so can call instance_eval. 

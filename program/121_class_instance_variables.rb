@@ -1,21 +1,21 @@
 class MyClass
-	@my_var = 1
+  @my_var = 1
 
-	def self.read
-		@my_var
-	end
+  def self.read
+    @my_var
+  end
 
-	def self.write
-		@my_var = 0
-	end
+  def self.write
+    @my_var = 0
+  end
 
-	def write
-		@my_var = 3
-	end
+  def write
+    @my_var = 3
+  end
 
-	def read
-		@my_var
-	end
+  def read
+    @my_var
+  end
 end
 
 a = MyClass.new  #类和对象分别拥有一组自己的实例变量

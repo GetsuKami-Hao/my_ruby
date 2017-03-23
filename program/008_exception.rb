@@ -1,11 +1,11 @@
 # exception catch	
 
 def hello
-	raise
+  raise
 end
 
 begin
-	hello
+  hello
 rescue RuntimeError
-	puts "run time error."
+  puts "run time error."
 end

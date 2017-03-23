@@ -6,8 +6,7 @@ files = ftp.chdir('/etc')
 
 files = ftp.list('*')
 
-files.each do |line|
-	puts line
+files.each { |line| puts line }
 end
 
 ftp.close

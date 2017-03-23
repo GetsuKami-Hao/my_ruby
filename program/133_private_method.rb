@@ -1,11 +1,12 @@
 class MyClass
 
-	attr_accessor :name
+  attr_accessor :name
 
-	private
-		def get_hello
-			"hello #{@name}"
-		end
+  private
+  
+  def get_hello
+    "hello #{@name}"
+  end
 
 end
 

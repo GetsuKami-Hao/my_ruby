@@ -1,14 +1,14 @@
 class User
 
-	attr_accessor :name, :age
+  attr_accessor :name, :age
 
-	def initialize name,age
-		@name, @age = name , age
-	end
+  def initialize(name,age)
+    @name, @age = name , age
+  end
 
-	def to_s
-		"name = #{self.name}\nage = #{self.age}"
-	end
+  def to_s
+    "name = #{self.name}\nage = #{self.age}"
+  end
 end
 
 user = User.new("kakarot",32)

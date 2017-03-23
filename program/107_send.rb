@@ -1,14 +1,16 @@
 class A
-	attr_accessor :name, :age
-	private 
-		def yourname
-			'kakarot'
-		end
+  attr_accessor :name, :age
+  
+  private 
 
-		def your(name,age)
-			@name = name
-			@age = age			
-		end
+  def yourname
+    'kakarot'
+  end
+
+  def your(name,age)
+    @name = name
+    @age = age			
+  end
 end
 
 

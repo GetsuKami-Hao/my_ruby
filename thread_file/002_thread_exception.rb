@@ -1,11 +1,11 @@
 begin 
-	t = Thread.new do
-		Thread.pass
-		raise "unhandled exception"
-	end
-	t.join
+  t = Thread.new do
+    Thread.pass
+    raise "unhandled exception"
+  end
+  t.join
 rescue 
-	p $!
+  p $!
 end
 
 #当某线程发生异常，且没有被rescue捕捉到时，改线程通常会被无警告的终止。

@@ -1,20 +1,15 @@
-(1..5).each{ |a|
-	#p a
-}
+(1..5).each{ |a| puts a }
 
 x = 10
-[1,2,3].each do |x|
-	puts "#{x}"
-end
+(1..3).each{ |x| puts "x = #{x}" } 
+
 
 puts "x = #{x}"
 
+y = 10
+(1..3).each{ |x| y = x }
 
-y = 10 # y was modified.
-[1,2,3].each do |x|
-	y = x
-end
-
+# y was modified.
 puts "y = #{y}"
 
 

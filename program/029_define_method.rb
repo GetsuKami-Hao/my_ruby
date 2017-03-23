@@ -1,25 +1,27 @@
+module SetUp
+  def setup_accessor(*var)
+    var.each do |var|
+      define_method var  do
+        instance_variable_get "@#{var}"
+		  end
+      
+      define_method "#{var}=" do |value|
+        instance_variable_set "@#{var}" , value
+      end
+	  end
+	end
+end
+
 class User
 	#attr_accessor :name , :age
+	extend SetUp
 
-	def self.setup_accessor var
-		define_method var  do
-			instance_variable_get "@#{var}"
-		end
+  setup_accessor :name, :age
 
-		define_method "#{var}=" do |value|
-			instance_variable_set "@#{var}" , value
-		end
-
-	end
-
-	setup_accessor :name
-	setup_accessor :age
-
-	def initialize name ,age
-		@name = name
-		@age = age
-	end
-
+  def initialize(name ,age)	
+    @name = name
+    @age = age
+  end
 end
 
 user = User.new("kakarot",34)

@@ -3,22 +3,22 @@
 
 module Management
 
-	def self.included base
-		base.extend ClassMethods
+  def self.included(base)
+    base.extend ClassMethods
 
-		base.class_eval do
-			setup_attribute
-		end
-	end
+    base.class_eval do
+      setup_attribute
+    end
+  end
 
-	module ClassMethods
-		def setup_attribute
-			puts "setup_attribute"
-		end
-	end
+  module ClassMethods
+    def setup_attribute
+      puts "setup_attribute"
+    end
+  end
 end
 
 
 class User
-	include Management
+  include Management
 end

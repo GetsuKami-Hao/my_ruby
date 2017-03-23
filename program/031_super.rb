@@ -1,28 +1,27 @@
 class User
-	attr_accessor :name, :age
+  attr_accessor :name, :age
 
-	def initialize name, age
-		@name, @age = name, age
-	end
+  def initialize(name, age)
+    @name, @age = name, age
+  end
 
-	def panels
-		@panels ||= ['Profile','Products']
-	end
+  def panels
+    @panels ||= ['Profile','Products']
+  end
 
-	def output_info(info = "User class")
-		puts "use by #{info}"
-	end
+  def output_info(info = "User class")
+    puts "use by #{info}"
+  end
 end
 
 class Admin < User
 
-	def panels
-		super  # use superclass method, 'super' can transfer parameter.
-		@panels.concat(['Manage Users','System Setup'])
-		output_info("Admin class")  # define in User class .
-	end
-
-
+  def panels
+    super  # use superclass method, 'super' can transfer parameter.
+    @panels.concat(['Manage Users','System Setup'])
+    output_info("Admin class")  # define in User class .
+  end
+  
 end
 
 p Admin.superclass

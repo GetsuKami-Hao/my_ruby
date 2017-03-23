@@ -3,6 +3,7 @@
 #name is required
 
 hello1 = -> (name){"hello #{name}."}
+puts " -> #{hello1.lambda?}"
 puts hello1.call("world")
 
 puts "-" * 30

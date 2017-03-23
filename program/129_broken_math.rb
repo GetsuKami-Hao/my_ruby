@@ -1,14 +1,14 @@
 class Fixnum
-	alias_method :old_plus , :+
-	def +(num)
-		self.old_plus(num).old_plus(1)
-	end
+  alias_method :old_plus , :+
+  def +(num)
+    self.old_plus(num).old_plus(1)
+  end
 end
 
 class Array
-	def append_z
-		self << "z"
-	end
+  def append_z
+    self << "z"
+  end
 end                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 p 3+4
 

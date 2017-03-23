@@ -1,19 +1,17 @@
-class User
-
-end
+User = Class.new
 
 User.class_eval  do
 	
-	attr_accessor :name
+  attr_accessor :name
 
-	def puts_name
-		puts "User name is #{self.name}"
-		puts "User name is #{@name}"
-	end
+  def puts_name
+    puts "User name is #{self.name}"
+    puts "User name is #{@name}"
+  end
 
-	def self.userInfo
-		{name: "newton" , age: 38}
-	end
+  def self.userInfo
+    {name: "newton" , age: 38}
+  end
 
 end
 

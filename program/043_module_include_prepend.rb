@@ -1,10 +1,10 @@
-module Human
+# module Human
+# end
+Human = Module.new
 
-end
-
-module Management
-
-end
+# module Management
+# end
+Management = Module.new
 
 class User
 	include Human				#Insert the module into the class behind.

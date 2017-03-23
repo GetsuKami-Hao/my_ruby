@@ -1,19 +1,21 @@
 module Management
-	def self.included base
-		puts "Management is being included into #{base}"
-		base.include InstanceMethods
-		base.prepend ClassMethods
-	end
+  def self.included base
+    puts "Management is being included into #{base}"
+    base.include InstanceMethods
+    base.prepend ClassMethods
+  end
 
-	module InstanceMethods
+  # module InstanceMethods
 
-	end
+  # end
 
-	module ClassMethods
+  # module ClassMethods
 
-	end
+  # end
+  InstanceMethods = Module.new
+  ClassMethods = Module.new
 end
 
 class User
-	include Management
+  include Management
 end

@@ -1,13 +1,13 @@
 class A
 
   def method_name 
-		'method in A'
-	end
+    'method in A'
+  end
 end
 
 a = A.new
 def a.method_name
-	'method in singleton'
+  'method in singleton'
 end
 
 p a.method_name

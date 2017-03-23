@@ -1,6 +1,6 @@
 def counter n 
 
-	proc {  n += 1  }
+  proc {  n += 1  }
 
 end
 

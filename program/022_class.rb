@@ -1,10 +1,11 @@
 class User
 
-	attr_reader :name, :age  # getter method.
-	def initialize name,age
-		@name = name
-		@age = age
-	end
+  attr_reader :name, :age  # getter method.
+
+  def initialize(name,age)
+	  @name = name
+	  @age = age
+  end
 
 end
 

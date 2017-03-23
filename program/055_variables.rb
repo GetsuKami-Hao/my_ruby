@@ -1,18 +1,17 @@
 class A
 
-	@a = 1   # don't use
-	@@b = 2
+  @a = 1   # don't use
+  @@b = 2
 
-	def initialize
-		@c = 3
-		@@d = 4
-	end
+  def initialize
+    @c = 3
+    @@d = 4
+  end
 
-	class << self
-		@e = 5 	# don't use
-		@@f = 6 # don't use
-	end
-
+  class << self
+    @e = 5 	# don't use
+    @@f = 6 # don't use
+  end
 end
 
 

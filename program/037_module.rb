@@ -2,43 +2,42 @@ class User
 
 	attr_accessor :name, :age
 
-	def initialize name,age
-		@name, @age = name , age
-	end
+	def initialize(name,age)
+    @name, @age = name , age
+  end
 
-	def panels
-		@panels ||= ['Profile','Products']
-	end
+  def panels
+    @panels ||= ['Profile','Products']
+  end
 
 end
 
 module Management
-	def company_notifies
-		Time.now.to_s + " fix machine."
-	end
+  def company_notifies
+    Time.now.to_s + " fix machine."
+  end
 
-	def company_info
-		"The company was founded in 2015/03/11"
-	end
-
+  def company_info
+    "The company was founded in 2015/03/11"
+  end
 end
 
 class 	Admin < User
-	include Management # 'extend' keyword statement a instance method.
+  include Management # 'include' keyword statement a instance method.
 
-	def panels
-		super
-		@panels.concat(['Manage User', 'System Setup'])
-	end
+  def panels
+    super
+    @panels.concat(['Manage User', 'System Setup'])
+  end
 
 end
 
 class Staff < User
-	extend Management # 'extend' keyword statement a class method.
-	def panels
-		super
-		@panels << ['Task']
-	end
+  extend Management # 'extend' keyword statement a class method.
+  def panels
+    super
+    @panels << ['Task']
+  end
 end
 
 user = Admin.new("kakarot",32)

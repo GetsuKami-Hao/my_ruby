@@ -1,13 +1,13 @@
 module M
-	def yourname
-		p 'kakarot'
-	end
+  def yourname
+    p 'kakarot'
+  end
 end
 
 module Kernel  #add method in Kernel
-	def whatsyourname
-		p 'my name is kakarot'
-	end
+  def whatsyourname
+    p 'my name is kakarot'
+  end
 end
 
 include M

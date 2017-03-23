@@ -1,14 +1,16 @@
 class A
-	private 
-		def private_method
-			puts "I love uu"
-		end
+  
+  private 
+  
+  def private_method
+    puts "I love uu"
+  end
 end
 
 class B < A
-	def public_method
-		private_method
-	end
+  def public_method
+    private_method
+  end
 end
 
 B.new.public_method

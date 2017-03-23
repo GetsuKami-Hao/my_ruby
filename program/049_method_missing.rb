@@ -1,16 +1,15 @@
 class People
 
-	def say_hi(a='')
-		'hi, world!'
-	end
+  def say_hi(a='')
+    'hi, world!'
+  end
 end
 
 class User < People
 
-	def method_missing(name,*args)
-		"method name is #{name} , parameters: #{args}"
-	end
-
+  def method_missing(name,*args)
+    "method name is #{name} , parameters: #{args}"
+  end
 end
 
 u = User.new
