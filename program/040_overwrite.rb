@@ -1,6 +1,6 @@
 class User
   def panels
-	  @panels ||= ['Profile' , 'Products']
+    @panels ||= ['Profile' , 'Products']
   end
 end
 

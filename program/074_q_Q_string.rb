@@ -6,6 +6,6 @@ p '#{var}'
 p %Q("#{var}"")  
 
 p <<HERREDOC
-	Oh, my god
-	It's my life
+  Oh, my god
+  It's my life
 HERREDOC

@@ -9,4 +9,4 @@ def world(block)
   block.call("world")
 end
 
-hello('yu'){|x| puts "Hello #{x}, from block."}
+hello('yu'){ |x| puts "Hello #{x}, from block." }

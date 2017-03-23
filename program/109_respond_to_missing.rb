@@ -1,6 +1,5 @@
 class MyClass
-
-	def method_missing(method_name, *args)
+  def method_missing(method_name, *args)
 
     match = method_name.to_s.match(/(.*?)([?=!]?)$/)
 

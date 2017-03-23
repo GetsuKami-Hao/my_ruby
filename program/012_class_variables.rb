@@ -6,12 +6,12 @@ class People
 
   @@counter = 0;
   def initialize(name)
-	  @name = name
-	  @@counter += 1
+    @name = name
+    @@counter += 1
   end
 
   def get_counter
-	  @@counter
+    @@counter
   end
 end
 

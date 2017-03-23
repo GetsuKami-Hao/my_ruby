@@ -4,7 +4,7 @@ socket = Socket.new(:INET , :STREAM)
 remote_addr = Socket.pack_sockaddr_in(80, 'www.baidu.com')
 
 begin
-	#发起到百度端口80非阻塞式连接
+  #发起到百度端口80非阻塞式连接
 
   socket.connect_nonblock(remote_addr)
 
